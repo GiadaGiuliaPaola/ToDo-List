@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body{
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(220, 98%, 61%);
+    text-align: center;
+    padding: 2rem;
+  }
+
+/* Layout mobile dark theme*/
+@media (min-width: 375px) {
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--light-grayish-blue); /* Adjust text color as needed */
+    background-color: var(--very-dark-blue); /* Set the background color */
+    background-image: url('images/bg-mobile-dark.jpg'); 
+    background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+    background-size: 100vh; /* Adjust background image size */
+    background-position: top center; /* Set the background image position */
+    padding-top: 3rem; /* Adjust top padding to show background image */
+  }
+
+  #header {
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 2rem;
+    color: var(--very-light-gray); /* Adjust header text color */
+  }
+
+  #myInput {
+    background-color: transparent;
+    color: var(--light-grayish-blue);
+    border: none; 
+}
+
+  #myInput :hover{
+    border: none;
+  }
+
+  #todoinput, #todolist {
+    display: inline-block; /* Display input and list items in line */
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--very-dark-desaturated-blue);
+    border-radius: 4px;
+  }
+
+  #myList {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #myList li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  #myList li.checked {
+    text-decoration: line-through; 
+    color: var(--very-dark-grayish-blue); 
+  }
+
+  .footer-buttons {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: var(--very-dark-grayish-blue);
+    background-color: transparent;
+  }
+
+  .footer-buttons button {
+    background-color: var(--very-dark-desaturated-blue);
+    color: var(--very-dark-grayish-blue);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+  .footer-buttons button:hover {
+    margin: 5px;
+    color: var(--bright-blue); /* Adjust button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .footer-buttons button:active,
+.footer-buttons button:focus {
+    color: var(--bright-blue);
+    font-weight: bold; /* Set color when button is active or focused */
+}
+
+  .checkbox {
+    display: inline-block;
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+    background-image: url('images/icon-check.svg'); /* Background color for the checkbox */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 50%; /* Rounded corners */
+    margin-right: 30px; /* Spacing between checkbox and text */
+  }
+
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+
+  /* Align close 'x' button to the right */
+li {
+  list-style-type: none;
+  margin-bottom: 10px; /* Adjust spacing between list items */
+  position: relative;
+}
+
+/* Adjust the text layout */
+li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  /* footer */
+  .attribution{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px; /* Adjust padding as needed */
+    text-align: center; /* Align text to center */
+    font-size: 14px; /* Adjust font size */
+    color: var(--very-dark-grayish-blue)
+  }
+
+  .attribution a {
+    text-decoration: none; /* Remove default underline */
+    color: #007bff; /* Link color */
+}
+
+.attribution a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Hover color */
+}
+
+}
+
+
+@media (min-width: 1440px) {
+body{
+  background-image: url(images/bg-desktop-dark.jpg);
+  background-repeat: no-repeat; 
+  background-size: 100%; 
+  background-position: top center; 
+  padding-top: 3rem; 
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+}
+
+/* Colors */
+/* Primary */
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+/* Neutral - Light Theme */
+:root {
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+}
+
+/* Dark Theme */
+:root {
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue-dark: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue-dark: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-hover: hsl(237, 14%, 26%);
+}
+
